@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Deep Learning | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="笔记基于李哥考研的《深度学习实战》相关网课视频和学习资料整理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Deep Learning">
+<meta property="og:url" content="http://example.com/2026/02/02/deeplearning/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="笔记基于李哥考研的《深度学习实战》相关网课视频和学习资料整理">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/1.png">
+<meta property="og:image" content="http://example.com/2.png">
+<meta property="og:image" content="http://example.com/4.png">
+<meta property="og:image" content="http://example.com/3.png">
+<meta property="article:published_time" content="2026-02-02T11:24:25.000Z">
+<meta property="article:modified_time" content="2026-02-04T12:17:13.887Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="learning">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/1.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-deeplearning" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/02/02/deeplearning/" class="article-date">
+  <time class="dt-published" datetime="2026-02-02T11:24:25.000Z" itemprop="datePublished">2026-02-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Deep Learning
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>笔记基于李哥考研的《深度学习实战》相关网课视频和学习资料整理</p>
+<span id="more"></span>
+
+<h3 id="机器学习与深度学习"><a href="#机器学习与深度学习" class="headerlink" title="机器学习与深度学习"></a>机器学习与深度学习</h3><p>人工智能、机器学习、深度学习他们之间好像经常同时出现，其实他们是一种包含的关系<br><img src="/1.png" alt="示例图片"><br>机器学习一般是基于数学，或者统计学的方法，具有很强的可解释性。深度学习是机器学习的子集，通常具有一个较为庞大的神经网络，从大量数据中进行学习.</p>
+<p>深度学习是机器学习的子集，它基于人工神经网络，通过构建具有多个层次的神经网络模型来学习数据中的复杂模式。这些层次可以自动地从大量的数据中提取特征，从低级特征（如图像中的线条、边缘）逐步构建到高级特征（如物体的形状、纹理）。</p>
+<p>简而言之就是设计一个很深的网络架构，让机器自己学。再简单一点，深度学习就是找一个函数 $F(\cdot)$，实现从数据到结果的映射。<br><img src="/2.png" alt="示例图片"><br>例如我们根据身高、体重、财富等因素推断一个人的寿命，或者根据一个动物的图片来判断这是哪个动物，甚至是根据一段描述来生成一个图片。由于这个函数 $F(\cdot)$ 太过于复杂，因此我们需要机器自己学习。在 $F(X) &#x3D; Y$ 中存在三个对象：函数 $F(\cdot)$、输入 $X$、输出 $Y$，这三个是深度学习的基础。</p>
+<h3 id="常见的神经网络输入"><a href="#常见的神经网络输入" class="headerlink" title="常见的神经网络输入"></a>常见的神经网络输入</h3><p>常见的神经网络输入，一般有三种数据形式</p>
+<ul>
+<li><strong>向量</strong>：例如 身高、体重、财富 $(180, 150, 8000)$</li>
+<li><strong>矩阵&#x2F;张量</strong>：图片，图片是由多个像素点构成，而每个像素点上不同的 RGB 值构成了不同颜色，因此一张图片可以由矩阵表示<img src="/4.png" alt="示例图片"> </li>
+<li><strong>序列</strong>：例如 “你今天吃什么”，我手机用的”苹果”，我中午吃的”苹果”，这些输入需要一定的上下文或前后关系才能够理解，比如我们想知道这一段视频来自哪段电影，一段视频就属于序列输入。</li>
+</ul>
+<h3 id="常见的神经网络输出"><a href="#常见的神经网络输出" class="headerlink" title="常见的神经网络输出"></a>常见的神经网络输出</h3><p>我们想要的输出（任务类别）一般有以下几种</p>
+<ul>
+<li><strong>回归任务（填空题）</strong>：预测某个具体的值，例如 根据以前的温度，来推测今天的温度有多高</li>
+<li><strong>分类任务（选择题）</strong>：将不同对象进行区分，例如 图片：猫&#x2F;狗，疾病：轻度&#x2F;中度&#x2F;重度，结果具有一定的约束性</li>
+<li><strong>生成任务（结构化）（简答题）</strong>：生成结构化的对象，例如 ChatGPT，AI画图。其实生成任务也是通过分类实现，两者关系密切</li>
+</ul>
+<blockquote>
+<p>分类和回归是结构化任务的基础。分类时，是用数字来表示类别。有的时候需要多个模态的数据，比如图片、文字、声音。显然，数据对于深度学习来说是重要的基础。</p>
+</blockquote>
+<h3 id="如何开始深度学习"><a href="#如何开始深度学习" class="headerlink" title="如何开始深度学习"></a>如何开始深度学习</h3><p>让我们先从宏观方面了解一下<br><img src="/3.png" alt="示例图片"><br>我们先根据数据，大致定义一个函数，显然这个函数和实际的映射关系（函数）是有一定差距的，因此我们定义一个合适的损失函数，这个损失函数用来衡量我们定义的函数和实际结果之间存在的差距大小，然后我们根据差距对定义的函数进行优化，使得定义的函数逐渐接近实际的映射关系。</p>
+<h4 id="定义函数"><a href="#定义函数" class="headerlink" title="定义函数"></a>定义函数</h4><p>如何找一个函数呢？我们先根据数据 (feature) 和标签 (label) 进行一个简单分析</p>
+<table>
+<thead>
+<tr>
+<th align="center">x(数据)</th>
+<th align="center">y(标签)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">3.1</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">5.1</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">6.9</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">8.7</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">10.8</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">13.5</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">?</td>
+</tr>
+</tbody></table>
+<p>模型（预测值）：$y_0 &#x3D; w x + b$</p>
+<p>上述模型是一个线性模型（Linear model），$w$ 为权重（weight），$b$ 为偏差（bias），这两个都是未知参数。我们可以简单地给出一个预期函数：$y_0 &#x3D; 3x + 2$。</p>
+<h4 id="定义损失函数"><a href="#定义损失函数" class="headerlink" title="定义损失函数"></a>定义损失函数</h4><p>接下来我们要定义一个损失函数Loss，这是一个关于 $w$ 和 $b$（未知参数）的函数，用于衡量模型预测结果与真实结果之间的差异程度。</p>
+<p>具体来说，如果我们选择了一组 $w, b$，通过损失函数计算得出的结果越大，说明误差越大。</p>
+<p>下面是一个计算单个样本损失的例子：<br>$<br>l(w, b) &#x3D; |y_0 - y| &#x3D; |w x + b - y|<br>$</p>
+<p>其中 $y_0$ 为预测值，$y$ 为真实值，$w, b$ 为未知参数。由于实际情况下未知参数数量很多，我们往往用 $\theta_i$ 来代替这些未知参数。</p>
+<p>根据上面公式我们可以分析得出：当损失函数值越小，代表偏差越小，说明我们定义的模型越符合实际，即误差越小，效果越好；反之则模型偏差大，效果差。我们可以用 Loss 来判断所选参数 ($w$ 和 $b$) 的好坏。</p>
+<p>当然，这只是单个数据的损失。我们需要对所有数据的损失求平均：<br>$L &#x3D; \frac{1}{N} \sum_{i&#x3D;1}^{N} l(w, b)_i$</p>
+<p>下面让我们举一些例子。我们根据 6 组数据，算出对应的损失，加和并求平均，得出 $L &#x3D; 4.48$：</p>
+<table>
+<thead>
+<tr>
+<th align="center">x</th>
+<th align="center">y (实际值)</th>
+<th align="center">$y &#x3D; 3x + 2$ (预测值)</th>
+<th align="center">loss</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">3.1</td>
+<td align="center">5</td>
+<td align="center">1.9</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">5.1</td>
+<td align="center">8</td>
+<td align="center">2.9</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">6.9</td>
+<td align="center">11</td>
+<td align="center">4.1</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">8.7</td>
+<td align="center">14</td>
+<td align="center">5.3</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">10.8</td>
+<td align="center">17</td>
+<td align="center">6.2</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">13.5</td>
+<td align="center">20</td>
+<td align="center">6.5</td>
+</tr>
+<tr>
+<td align="center">当 $w &#x3D; 3$, $b &#x3D; 2$ 时，$\mathrm{Loss} &#x3D; \frac{1.9 + 2.9 + 4.1 + 5.3 + 6.2 + 6.5}{6} &#x3D; 4.48$</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<p>下面为两个常见的损失函数公式<br>均绝对误差 (Mean Absolute Error, MAE):   $L(w, b) &#x3D; \frac{1}{n} \sum_{i&#x3D;1}^{n} |y_0 - y_i|$<br>均方误差（Mean Squared Error, MSE):   $L(w, b) &#x3D; \frac{1}{n} \sum_{i&#x3D;1}^{n} (y_0^{(i)} - y^{(i)})^2$</p>
+<h4 id="模型优化"><a href="#模型优化" class="headerlink" title="模型优化"></a>模型优化</h4><p>由于Loss函数表示了预测结果与真实结果之间的差异程度,因此我们应该尽可能找到一组$w$和$b$使得Loss的结果最小，这也才能尽可能与真实结果接近。所以我们需要根据之前的Loss结果来进一步优化我们之前选取的$w$和$b$。</p>
+<p>$w*$,$b*$表示最优的权重和偏差，这些值是通过最小化损失函数L LL得到的。也就是说，在所有可能的权重和偏差组合中,$w*$和$b*$是使损失函数 达到最小值的那组$w$和$b$。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/02/02/deeplearning/" data-id="cuidjcool44eykM52T4r6OhzT" data-title="Deep Learning" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/learning/" rel="tag">learning</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2026/02/04/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/learning/" rel="tag">learning</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/learning/" style="font-size: 10px;">learning</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/02/">February 2026</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/02/04/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2026/02/02/deeplearning/">Deep Learning</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
