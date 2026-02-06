@@ -166,6 +166,151 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://daiguayuxiangliao.github.io/2026/02/06/deeplearn/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2026/02/06/deeplearn/" class="post-title-link" itemprop="url">deeplearn</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2026-02-06 13:04:37 / Modified: 13:28:16" itemprop="dateCreated datePublished" datetime="2026-02-06T13:04:37+08:00">2026-02-06</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h4 id="定义损失函数">定义损失函数</h4>
+<p>接下来我们要定义一个损失函数Loss，这是一个关于 <span
+class="math inline"><em>w</em></span> 和 <span
+class="math inline"><em>b</em></span>（未知参数）的函数，用于衡量模型预测结果与真实结果之间的差异程度。</p>
+<p>具体来说，如果我们选择了一组 <span
+class="math inline"><em>w</em>, <em>b</em></span>，通过损失函数计算得出的结果越大，说明误差越大。</p>
+<p>下面是一个计算单个样本损失的例子： <span
+class="math display"><em>l</em>(<em>w</em>, <em>b</em>) = |<em>y</em><sub>0</sub> − <em>y</em>| = |<em>w</em><em>x</em> + <em>b</em> − <em>y</em>|</span>
+其中 <span class="math inline"><em>y</em><sub>0</sub></span>
+为预测值，<span class="math inline"><em>y</em></span> 为真实值，<span
+class="math inline"><em>w</em>, <em>b</em></span>
+为未知参数。由于实际情况下未知参数数量很多，我们往往用 <span
+class="math inline"><em>θ</em><sub><em>i</em></sub></span>
+来代替这些未知参数。</p>
+<p>根据上面公式我们可以分析得出：当损失函数值越小，代表偏差越小，说明我们定义的模型越符合实际，即误差越小，效果越好；反之则模型偏差大，效果差。我们可以用
+Loss 来判断所选参数 (<span class="math inline"><em>w</em></span> 和
+<span class="math inline"><em>b</em></span>) 的好坏。</p>
+<p>当然，这只是单个数据的损失。我们需要对所有数据的损失求平均： <span
+class="math display">$$
+L = \frac{1}{N} \sum_{i=1}^{N} l_i(w, b)
+$$</span></p>
+<p>下面让我们举一些例子。我们根据 6
+组数据，算出对应的损失，加和并求平均，得出 <span
+class="math inline"><em>L</em> = 4.48</span>：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">x</th>
+<th style="text-align: center;">y (实际值)</th>
+<th style="text-align: center;"><span
+class="math inline"><em>y</em> = 3<em>x</em> + 2</span> (预测值)</th>
+<th style="text-align: center;">loss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3.1</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">1.9</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5.1</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">2.9</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">6.9</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">4.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">8.7</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">5.3</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">10.8</td>
+<td style="text-align: center;">17</td>
+<td style="text-align: center;">6.2</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">13.5</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">6.5</td>
+</tr>
+</tbody>
+</table>
+<p>当 <span class="math inline"><em>w</em> = 3</span>, <span
+class="math inline"><em>b</em> = 2</span> 时， <span
+class="math display">$$
+\text{Loss} = \frac{1.9 + 2.9 + 4.1 + 5.3 + 6.2 + 6.5}{6} = 4.48
+$$</span></p>
+<p>下面为两个常见的损失函数公式 均绝对误差 (Mean Absolute Error,
+MAE):</p>
+<p><span class="math display">$$
+L(w,b) = \frac{1}{n} \sum_{i=1}^{n} | y_0^{(i)} - y^{(i)} |
+$$</span></p>
+<p>均方误差（Mean Squared Error, MSE):</p>
+<p><span class="math display">$$
+L(w, b) = \frac{1}{n} \sum_{i=1}^{n} (y_0^{(i)} - y^{(i)})^2
+$$</span></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://daiguayuxiangliao.github.io/2026/02/02/deeplearning/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -197,7 +342,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2026-02-05 11:56:25" itemprop="dateModified" datetime="2026-02-05T11:56:25+08:00">2026-02-05</time>
+                <time title="Modified: 2026-02-06 12:52:33" itemprop="dateModified" datetime="2026-02-06T12:52:33+08:00">2026-02-06</time>
               </span>
 
           
@@ -300,7 +445,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
