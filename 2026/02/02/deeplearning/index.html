@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
-
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 8.1.1">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -14,91 +13,123 @@
 <link rel="stylesheet" href="/css/main.css">
 
 
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"daiguayuxiangliao.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"daiguayuxiangliao.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js" defer></script>
+<head>
+  <!-- 其他 head 内容 -->
+  <link rel="stylesheet" href="/css/katex.min.css">
+  <script src="/js/katex.min.js"></script>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
-    <meta name="description" content="深度学习…">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --></head>
+
+<body>
+  <!-- 页面内容 -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      katex.renderAll();
+    });
+  </script>
+</body>
+
+
+  <meta name="description" content="深度学习…">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Deep Learning">
 <meta property="og:url" content="https://daiguayuxiangliao.github.io/2026/02/02/deeplearning/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="深度学习…">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://daiguayuxiangliao.github.io/1.png">
-<meta property="og:image" content="https://daiguayuxiangliao.github.io/2.png">
-<meta property="og:image" content="https://daiguayuxiangliao.github.io/4.png">
-<meta property="og:image" content="https://daiguayuxiangliao.github.io/3.png">
+<meta property="og:image" content="https://daiguayuxiangliao.github.io/2026/02/02/deeplearning/1.png">
+<meta property="og:image" content="https://daiguayuxiangliao.github.io/2026/02/02/deeplearning/2.png">
+<meta property="og:image" content="https://daiguayuxiangliao.github.io/2026/02/02/deeplearning/4.png">
+<meta property="og:image" content="https://daiguayuxiangliao.github.io/2026/02/02/deeplearning/3.png">
 <meta property="article:published_time" content="2026-02-02T11:24:25.000Z">
-<meta property="article:modified_time" content="2026-02-04T13:15:28.065Z">
+<meta property="article:modified_time" content="2026-02-05T03:56:25.129Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="learning">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://daiguayuxiangliao.github.io/1.png">
-
+<meta name="twitter:image" content="https://daiguayuxiangliao.github.io/2026/02/02/deeplearning/1.png">
 
 <link rel="canonical" href="https://daiguayuxiangliao.github.io/2026/02/02/deeplearning/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://daiguayuxiangliao.github.io/2026/02/02/deeplearning/","path":"2026/02/02/deeplearning/","title":"Deep Learning"}</script>
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
 
-<script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Deep Learning | Hexo</title>
+  <title>Deep Learning | Hexo</title>
   
 
-
-
-
-
-
-
-
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
-<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
-
-  
-
-
-
-
-
-
-  
 
 
 
 
 
   <noscript>
-    <link rel="stylesheet" href="/css/noscript.css">
-  </noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
-  <div class="headband"></div>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
 
-  <main class="main">
-    <div class="column">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
   </div>
 
   <div class="site-meta">
 
     <a href="/" class="brand" rel="start">
-      <i class="logo-line"></i>
-      <p class="site-title">Hexo</p>
-      <i class="logo-line"></i>
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Hexo</h1>
+      <span class="logo-line-after"><i></i></span>
     </a>
   </div>
 
   <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    <div class="toggle popup-trigger">
     </div>
   </div>
 </div>
@@ -106,16 +137,350 @@
 
 
 
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
 
 
 
-</header>
-        
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
   
-  <aside class="sidebar">
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://daiguayuxiangliao.github.io/2026/02/02/deeplearning/">
 
-    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
-      <ul class="sidebar-nav">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Deep Learning
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2026-02-02 19:24:25" itemprop="dateCreated datePublished" datetime="2026-02-02T19:24:25+08:00">2026-02-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2026-02-05 11:56:25" itemprop="dateModified" datetime="2026-02-05T11:56:25+08:00">2026-02-05</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>深度学习… <span id="more"></span></p>
+<h3 id="机器学习与深度学习">机器学习与深度学习</h3>
+<p>人工智能、机器学习、深度学习他们之间好像经常同时出现，其实他们是一种包含的关系<br />
+<img src="1.png" alt="示例图片" /><br />
+机器学习一般是基于数学，或者统计学的方法，具有很强的可解释性。深度学习是机器学习的子集，通常具有一个较为庞大的神经网络，从大量数据中进行学习.</p>
+<p>深度学习是机器学习的子集，它基于人工神经网络，通过构建具有多个层次的神经网络模型来学习数据中的复杂模式。这些层次可以自动地从大量的数据中提取特征，从低级特征（如图像中的线条、边缘）逐步构建到高级特征（如物体的形状、纹理）。</p>
+<p>简而言之就是设计一个很深的网络架构，让机器自己学。再简单一点，深度学习就是找一个函数
+<span
+class="math inline"><em>F</em>()</span>，实现从数据到结果的映射。<br />
+<img src="2.png" alt="示例图片" /><br />
+例如我们根据身高、体重、财富等因素推断一个人的寿命，或者根据一个动物的图片来判断这是哪个动物，甚至是根据一段描述来生成一个图片。由于这个函数
+<span class="math inline"><em>F</em>()</span>
+太过于复杂，因此我们需要机器自己学习。在 <span
+class="math inline"><em>F</em>(<em>X</em>) = <em>Y</em></span>
+中存在三个对象：函数 <span class="math inline"><em>F</em>()</span>、输入
+<span class="math inline"><em>X</em></span>、输出 <span
+class="math inline"><em>Y</em></span>，这三个是深度学习的基础。</p>
+<h3 id="常见的神经网络输入">常见的神经网络输入</h3>
+<p>常见的神经网络输入，一般有三种数据形式</p>
+<ul>
+<li><strong>向量</strong>：例如 身高、体重、财富 <span
+class="math inline">(180, 150, 8000)</span></li>
+<li><strong>矩阵/张量</strong>：图片，图片是由多个像素点构成，而每个像素点上不同的
+RGB 值构成了不同颜色，因此一张图片可以由矩阵表示<img src="4.png"
+alt="示例图片" /></li>
+<li><strong>序列</strong>：例如
+“你今天吃什么”，我手机用的”苹果”，我中午吃的”苹果”，这些输入需要一定的上下文或前后关系才能够理解，比如我们想知道这一段视频来自哪段电影，一段视频就属于序列输入。</li>
+</ul>
+<h3 id="常见的神经网络输出">常见的神经网络输出</h3>
+<p>我们想要的输出（任务类别）一般有以下几种</p>
+<ul>
+<li><strong>回归任务（填空题）</strong>：预测某个具体的值，例如
+根据以前的温度，来推测今天的温度有多高</li>
+<li><strong>分类任务（选择题）</strong>：将不同对象进行区分，例如
+图片：猫/狗，疾病：轻度/中度/重度，结果具有一定的约束性</li>
+<li><strong>生成任务（结构化）（简答题）</strong>：生成结构化的对象，例如
+ChatGPT，AI画图。其实生成任务也是通过分类实现，两者关系密切</li>
+</ul>
+<blockquote>
+<p>分类和回归是结构化任务的基础。分类时，是用数字来表示类别。有的时候需要多个模态的数据，比如图片、文字、声音。显然，数据对于深度学习来说是重要的基础。</p>
+</blockquote>
+<h3 id="如何开始深度学习">如何开始深度学习</h3>
+<p>让我们先从宏观方面了解一下<br />
+<img src="3.png" alt="示例图片" /><br />
+我们先根据数据，大致定义一个函数，显然这个函数和实际的映射关系（函数）是有一定差距的，因此我们定义一个合适的损失函数，这个损失函数用来衡量我们定义的函数和实际结果之间存在的差距大小，然后我们根据差距对定义的函数进行优化，使得定义的函数逐渐接近实际的映射关系。</p>
+<h4 id="定义函数">定义函数</h4>
+<p>如何找一个函数呢？我们先根据数据 (feature) 和标签 (label)
+进行一个简单分析</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">x(数据)</th>
+<th style="text-align: center;">y(标签)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">6.9</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">8.7</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">10.8</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">13.5</td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<p>模型（预测值）：<span
+class="math inline"><em>y</em><sub>0</sub> = <em>w</em><em>x</em> + <em>b</em></span></p>
+<p>上述模型是一个线性模型（Linear model），<span
+class="math inline"><em>w</em></span> 为权重（weight），<span
+class="math inline"><em>b</em></span>
+为偏差（bias），这两个都是未知参数。我们可以简单地给出一个预期函数：<span
+class="math inline"><em>y</em><sub>0</sub> = 3<em>x</em> + 2</span>。</p>
+<h4 id="定义损失函数">定义损失函数</h4>
+<p>接下来我们要定义一个损失函数Loss，这是一个关于 <span
+class="math inline"><em>w</em></span> 和 <span
+class="math inline"><em>b</em></span>（未知参数）的函数，用于衡量模型预测结果与真实结果之间的差异程度。</p>
+<p>具体来说，如果我们选择了一组 <span
+class="math inline"><em>w</em>, <em>b</em></span>，通过损失函数计算得出的结果越大，说明误差越大。</p>
+<p>下面是一个计算单个样本损失的例子： <span
+class="math display"><em>l</em>(<em>w</em>, <em>b</em>) = |<em>y</em><sub>0</sub> − <em>y</em>| = |<em>w</em><em>x</em> + <em>b</em> − <em>y</em>|</span>
+其中 <span class="math inline"><em>y</em><sub>0</sub></span>
+为预测值，<span class="math inline"><em>y</em></span> 为真实值，<span
+class="math inline"><em>w</em>, <em>b</em></span>
+为未知参数。由于实际情况下未知参数数量很多，我们往往用 <span
+class="math inline"><em>θ</em><sub><em>i</em></sub></span>
+来代替这些未知参数。</p>
+<p>根据上面公式我们可以分析得出：当损失函数值越小，代表偏差越小，说明我们定义的模型越符合实际，即误差越小，效果越好；反之则模型偏差大，效果差。我们可以用
+Loss 来判断所选参数 (<span class="math inline"><em>w</em></span> 和
+<span class="math inline"><em>b</em></span>) 的好坏。</p>
+<p>当然，这只是单个数据的损失。我们需要对所有数据的损失求平均： <span
+class="math display">$$
+L = \frac{1}{N} \sum_{i=1}^{N} l_i(w, b)
+$$</span></p>
+<p>下面让我们举一些例子。我们根据 6
+组数据，算出对应的损失，加和并求平均，得出 <span
+class="math inline"><em>L</em> = 4.48</span>：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">x</th>
+<th style="text-align: center;">y (实际值)</th>
+<th style="text-align: center;"><span
+class="math inline"><em>y</em> = 3<em>x</em> + 2</span> (预测值)</th>
+<th style="text-align: center;">loss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3.1</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">1.9</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5.1</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">2.9</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">6.9</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">4.1</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">8.7</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">5.3</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">10.8</td>
+<td style="text-align: center;">17</td>
+<td style="text-align: center;">6.2</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">13.5</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">6.5</td>
+</tr>
+</tbody>
+</table>
+<p>当 <span class="math inline"><em>w</em> = 3</span>, <span
+class="math inline"><em>b</em> = 2</span> 时， <span
+class="math display">$$
+\text{Loss} = \frac{1.9 + 2.9 + 4.1 + 5.3 + 6.2 + 6.5}{6} = 4.48
+$$</span></p>
+<p>下面为两个常见的损失函数公式 均绝对误差 (Mean Absolute Error,
+MAE):</p>
+<p><span class="math display">$$
+L(w,b) = \frac{1}{n} \sum_{i=1}^{n} | y_0^{(i)} - y^{(i)} |
+$$</span></p>
+<p>均方误差（Mean Squared Error, MSE):</p>
+<p><span class="math display">$$
+L(w, b) = \frac{1}{n} \sum_{i=1}^{n} (y_0^{(i)} - y^{(i)})^2
+$$</span></p>
+<h4 id="模型优化">模型优化</h4>
+<p>由于Loss函数表示了预测结果与真实结果之间的差异程度,因此我们应该尽可能找到一组<span
+class="math inline"><em>w</em></span>和<span
+class="math inline"><em>b</em></span>使得Loss的结果最小，这也才能尽可能与真实结果接近。所以我们需要根据之前的Loss结果来进一步优化我们之前选取的<span
+class="math inline"><em>w</em></span>和<span
+class="math inline"><em>b</em></span>。</p>
+<p><span class="math inline"><em>w</em>*</span>,<span
+class="math inline"><em>b</em>*</span>表示最优的权重和偏差，这些值是通过最小化损失函数L得到的。也就是说，在所有可能的权重和偏差组合中,<span
+class="math inline"><em>w</em>*</span>和<span
+class="math inline"><em>b</em>*</span>是使损失函数 达到最小值的那组<span
+class="math inline"><em>w</em></span>和<span
+class="math inline"><em>b</em></span>。</p>
+<p><span class="math display">$$
+\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
+$$</span></p>
+<p><span class="math display"><em>a</em> = <em>b</em></span></p>
+<p><span class="math inline"><em>a</em> = <em>b</em></span></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/learning/" rel="tag"># learning</a>
+          </div>
+
+        
+
+
+        
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
           Table of Contents
         </li>
@@ -124,22 +489,22 @@
         </li>
       </ul>
 
-      <div class="sidebar-panel-container">
-        <!--noindex-->
-        <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0"><span class="nav-number">1.</span> <span class="nav-text">机器学习与深度学习</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E8%BE%93%E5%85%A5"><span class="nav-number">2.</span> <span class="nav-text">常见的神经网络输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E8%BE%93%E5%87%BA"><span class="nav-number">3.</span> <span class="nav-text">常见的神经网络输出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%BC%80%E5%A7%8B%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0"><span class="nav-number">4.</span> <span class="nav-text">如何开始深度学习</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0"><span class="nav-number">4.1.</span> <span class="nav-text">定义函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0"><span class="nav-number">4.2.</span> <span class="nav-text">定义损失函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A8%A1%E5%9E%8B%E4%BC%98%E5%8C%96"><span class="nav-number">4.3.</span> <span class="nav-text">模型优化</span></a></li></ol></li></ol></div>
-        </div>
-        <!--/noindex-->
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0"><span class="nav-number">1.</span> <span class="nav-text">机器学习与深度学习</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E8%BE%93%E5%85%A5"><span class="nav-number">2.</span> <span class="nav-text">常见的神经网络输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E8%BE%93%E5%87%BA"><span class="nav-number">3.</span> <span class="nav-text">常见的神经网络输出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%BC%80%E5%A7%8B%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0"><span class="nav-number">4.</span> <span class="nav-text">如何开始深度学习</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0"><span class="nav-number">4.1.</span> <span class="nav-text">定义函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0"><span class="nav-number">4.2.</span> <span class="nav-text">定义损失函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A8%A1%E5%9E%8B%E4%BC%98%E5%8C%96"><span class="nav-number">4.3.</span> <span class="nav-text">模型优化</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
 
-        <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">John Doe</p>
   <div class="site-description" itemprop="description"></div>
 </div>
-<div class="site-state-wrap animated">
+<div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-        <a href="/archives/">
+          <a href="/archives/">
+        
           <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">posts</span>
         </a>
@@ -151,256 +516,88 @@
   </nav>
 </div>
 
-        </div>
+
+
       </div>
-    </div>
 
-    
+    </div>
   </aside>
+  <div id="sidebar-dimmer"></div>
 
 
-    </div>
+      </div>
+    </main>
 
-    <div class="main-inner post posts-expand">
-
-
-  
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://daiguayuxiangliao.github.io/2026/02/02/deeplearning/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Deep Learning | Hexo">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          Deep Learning
-        </h1>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2026-02-02 19:24:25" itemprop="dateCreated datePublished" datetime="2026-02-02T19:24:25+08:00">2026-02-02</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-02-04 21:15:28" itemprop="dateModified" datetime="2026-02-04T21:15:28+08:00">2026-02-04</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody"><p>深度学习…</p>
-<span id="more"></span>
-
-<h3 id="机器学习与深度学习"><a href="#机器学习与深度学习" class="headerlink" title="机器学习与深度学习"></a>机器学习与深度学习</h3><p>人工智能、机器学习、深度学习他们之间好像经常同时出现，其实他们是一种包含的关系<br><img src="/1.png" alt="示例图片"><br>机器学习一般是基于数学，或者统计学的方法，具有很强的可解释性。深度学习是机器学习的子集，通常具有一个较为庞大的神经网络，从大量数据中进行学习.</p>
-<p>深度学习是机器学习的子集，它基于人工神经网络，通过构建具有多个层次的神经网络模型来学习数据中的复杂模式。这些层次可以自动地从大量的数据中提取特征，从低级特征（如图像中的线条、边缘）逐步构建到高级特征（如物体的形状、纹理）。</p>
-<p>简而言之就是设计一个很深的网络架构，让机器自己学。再简单一点，深度学习就是找一个函数 $F(\cdot)$，实现从数据到结果的映射。<br><img src="/2.png" alt="示例图片"><br>例如我们根据身高、体重、财富等因素推断一个人的寿命，或者根据一个动物的图片来判断这是哪个动物，甚至是根据一段描述来生成一个图片。由于这个函数 $F(\cdot)$ 太过于复杂，因此我们需要机器自己学习。在 $F(X) &#x3D; Y$ 中存在三个对象：函数 $F(\cdot)$、输入 $X$、输出 $Y$，这三个是深度学习的基础。</p>
-<h3 id="常见的神经网络输入"><a href="#常见的神经网络输入" class="headerlink" title="常见的神经网络输入"></a>常见的神经网络输入</h3><p>常见的神经网络输入，一般有三种数据形式</p>
-<ul>
-<li><strong>向量</strong>：例如 身高、体重、财富 $(180, 150, 8000)$</li>
-<li><strong>矩阵&#x2F;张量</strong>：图片，图片是由多个像素点构成，而每个像素点上不同的 RGB 值构成了不同颜色，因此一张图片可以由矩阵表示<img src="/4.png" alt="示例图片"> </li>
-<li><strong>序列</strong>：例如 “你今天吃什么”，我手机用的”苹果”，我中午吃的”苹果”，这些输入需要一定的上下文或前后关系才能够理解，比如我们想知道这一段视频来自哪段电影，一段视频就属于序列输入。</li>
-</ul>
-<h3 id="常见的神经网络输出"><a href="#常见的神经网络输出" class="headerlink" title="常见的神经网络输出"></a>常见的神经网络输出</h3><p>我们想要的输出（任务类别）一般有以下几种</p>
-<ul>
-<li><strong>回归任务（填空题）</strong>：预测某个具体的值，例如 根据以前的温度，来推测今天的温度有多高</li>
-<li><strong>分类任务（选择题）</strong>：将不同对象进行区分，例如 图片：猫&#x2F;狗，疾病：轻度&#x2F;中度&#x2F;重度，结果具有一定的约束性</li>
-<li><strong>生成任务（结构化）（简答题）</strong>：生成结构化的对象，例如 ChatGPT，AI画图。其实生成任务也是通过分类实现，两者关系密切</li>
-</ul>
-<blockquote>
-<p>分类和回归是结构化任务的基础。分类时，是用数字来表示类别。有的时候需要多个模态的数据，比如图片、文字、声音。显然，数据对于深度学习来说是重要的基础。</p>
-</blockquote>
-<h3 id="如何开始深度学习"><a href="#如何开始深度学习" class="headerlink" title="如何开始深度学习"></a>如何开始深度学习</h3><p>让我们先从宏观方面了解一下<br><img src="/3.png" alt="示例图片"><br>我们先根据数据，大致定义一个函数，显然这个函数和实际的映射关系（函数）是有一定差距的，因此我们定义一个合适的损失函数，这个损失函数用来衡量我们定义的函数和实际结果之间存在的差距大小，然后我们根据差距对定义的函数进行优化，使得定义的函数逐渐接近实际的映射关系。</p>
-<h4 id="定义函数"><a href="#定义函数" class="headerlink" title="定义函数"></a>定义函数</h4><p>如何找一个函数呢？我们先根据数据 (feature) 和标签 (label) 进行一个简单分析</p>
-<table>
-<thead>
-<tr>
-<th align="center">x(数据)</th>
-<th align="center">y(标签)</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">1</td>
-<td align="center">3.1</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="center">5.1</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="center">6.9</td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td align="center">8.7</td>
-</tr>
-<tr>
-<td align="center">5</td>
-<td align="center">10.8</td>
-</tr>
-<tr>
-<td align="center">6</td>
-<td align="center">13.5</td>
-</tr>
-<tr>
-<td align="center">7</td>
-<td align="center">?</td>
-</tr>
-</tbody></table>
-<p>模型（预测值）：$y_0 &#x3D; w x + b$</p>
-<p>上述模型是一个线性模型（Linear model），$w$ 为权重（weight），$b$ 为偏差（bias），这两个都是未知参数。我们可以简单地给出一个预期函数：$y_0 &#x3D; 3x + 2$。</p>
-<h4 id="定义损失函数"><a href="#定义损失函数" class="headerlink" title="定义损失函数"></a>定义损失函数</h4><p>接下来我们要定义一个损失函数Loss，这是一个关于 $w$ 和 $b$（未知参数）的函数，用于衡量模型预测结果与真实结果之间的差异程度。</p>
-<p>具体来说，如果我们选择了一组 $w, b$，通过损失函数计算得出的结果越大，说明误差越大。</p>
-<p>下面是一个计算单个样本损失的例子：<br>$<br>l(w, b) &#x3D; |y_0 - y| &#x3D; |w x + b - y|<br>$</p>
-<p>其中 $y_0$ 为预测值，$y$ 为真实值，$w, b$ 为未知参数。由于实际情况下未知参数数量很多，我们往往用 $\theta_i$ 来代替这些未知参数。</p>
-<p>根据上面公式我们可以分析得出：当损失函数值越小，代表偏差越小，说明我们定义的模型越符合实际，即误差越小，效果越好；反之则模型偏差大，效果差。我们可以用 Loss 来判断所选参数 ($w$ 和 $b$) 的好坏。</p>
-<p>当然，这只是单个数据的损失。我们需要对所有数据的损失求平均：<br>$L &#x3D; \frac{1}{N} \sum_{i&#x3D;1}^{N} l(w, b)_i$</p>
-<p>下面让我们举一些例子。我们根据 6 组数据，算出对应的损失，加和并求平均，得出 $L &#x3D; 4.48$：</p>
-<table>
-<thead>
-<tr>
-<th align="center">x</th>
-<th align="center">y (实际值)</th>
-<th align="center">$y &#x3D; 3x + 2$ (预测值)</th>
-<th align="center">loss</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">1</td>
-<td align="center">3.1</td>
-<td align="center">5</td>
-<td align="center">1.9</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="center">5.1</td>
-<td align="center">8</td>
-<td align="center">2.9</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="center">6.9</td>
-<td align="center">11</td>
-<td align="center">4.1</td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td align="center">8.7</td>
-<td align="center">14</td>
-<td align="center">5.3</td>
-</tr>
-<tr>
-<td align="center">5</td>
-<td align="center">10.8</td>
-<td align="center">17</td>
-<td align="center">6.2</td>
-</tr>
-<tr>
-<td align="center">6</td>
-<td align="center">13.5</td>
-<td align="center">20</td>
-<td align="center">6.5</td>
-</tr>
-<tr>
-<td align="center">当 $w &#x3D; 3$, $b &#x3D; 2$ 时，$\mathrm{Loss} &#x3D; \frac{1.9 + 2.9 + 4.1 + 5.3 + 6.2 + 6.5}{6} &#x3D; 4.48$</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-</tbody></table>
-<p>下面为两个常见的损失函数公式<br>均绝对误差 (Mean Absolute Error, MAE):   $L(w, b) &#x3D; \frac{1}{n} \sum_{i&#x3D;1}^{n} |y_0 - y_i|$<br>均方误差（Mean Squared Error, MSE):   $L(w, b) &#x3D; \frac{1}{n} \sum_{i&#x3D;1}^{n} (y_0^{(i)} - y^{(i)})^2$</p>
-<h4 id="模型优化"><a href="#模型优化" class="headerlink" title="模型优化"></a>模型优化</h4><p>由于Loss函数表示了预测结果与真实结果之间的差异程度,因此我们应该尽可能找到一组$w$和$b$使得Loss的结果最小，这也才能尽可能与真实结果接近。所以我们需要根据之前的Loss结果来进一步优化我们之前选取的$w$和$b$。</p>
-<p>$w*$,$b*$表示最优的权重和偏差，这些值是通过最小化损失函数L LL得到的。也就是说，在所有可能的权重和偏差组合中,$w*$和$b*$是使损失函数 达到最小值的那组$w$和$b$。</p>
-
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/learning/" rel="tag"># learning</a>
-          </div>
+    <footer class="footer">
+      <div class="footer-inner">
+        
 
         
 
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2026</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
     </footer>
-  </article>
-</div>
-
-
-
-
-
-
-</div>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-inner">
-
-  <div class="copyright">
-    &copy; 
-    <span itemprop="copyrightYear">2026</span>
-    <span class="with-love">
-      <i class="fa fa-heart"></i>
-    </span>
-    <span class="author" itemprop="copyrightHolder">John Doe</span>
   </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
-  </div>
-
-    </div>
-  </footer>
 
   
-  <div class="toggle sidebar-toggle" role="button">
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-  </div>
-  <div class="sidebar-dimmer"></div>
-  <div class="back-to-top" role="button" aria-label="Back to top">
-    <i class="fa fa-arrow-up fa-lg"></i>
-    <span>0%</span>
-  </div>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
 
-<noscript>
-  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
-</noscript>
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
 
 </body>
 </html>
